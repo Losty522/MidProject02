@@ -2,12 +2,15 @@
   padding: 0;
   margin: 0;
 }
-
+html{
+  height: 100%;
+}
 .all_artcle{
   width: 90%;
   margin: auto;
 }
 body{
+  min-height: 100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -107,4 +110,104 @@ td{
   margin-right: 3px;
   height: 30px;
   width: 30px;
+}
+
+@media only screen and (max-width: 750px){
+  .all_artcle img{
+    height:  35px;
+    width:  auto;
+    margin-top:10px;
+    margin-bottom:10px;
+  }   
+
+  .all_artcle .yoko{
+    height:  25px;
+    width:  auto;
+  }
+  
+
+  .all_artcle h1{
+    background-color: #cce5cf;
+    font-size: 27px;
+    padding-left: 5px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .all_artcle h3{
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  
+  .all_artcle h4{
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  
+  .all_artcle p{
+    width: 80%;
+    font-size: 15px;
+  }
+  
+  .all_artcle .list{
+    font-size: 17px;
+    margin-left: 30px;
+    
+  }
+ 
+  .list_beginners{
+    font-size: 17px;
+    width: 80%;
+    margin-left: 30px;
+    list-style: disc;
+    
+  }
+  
+  #Riichi ul {
+    font-size: 17px;
+    width: 80%;
+    margin-left: 30px;
+    list-style: disc;
+    
+  }
+  
+  #Furiten ul {
+    font-size: 17px;
+    width: 80%;
+    margin-left: 30px;
+    list-style: disc;
+    
+  }
+  
+  #EndingTheGame ul {
+    font-size: 17px;
+    width: 80%;
+    margin-left: 30px;
+    list-style: disc;
+    
+  }
+  table{
+    width: 60%;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  th{
+    border: 1px solid black;
+  }
+  td{
+    border: 1px solid black;
+  }
+  
+  #Dora .arrow{
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 30px;
+    width: 30px;
+  }
+  
+  
 }

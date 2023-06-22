@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
 }
+html{
+  height:100%;
+}
 body{
+  min-height:100%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -45,18 +49,8 @@ body{
   flex-wrap: wrap;
   display: flex;
 }
-.area img{
-  height:  55px;
-  width:  auto;
-}
-
-.area .yoko{
-  height: 45px;
-  width:  auto;
-}
 
 .Sentence{
-  
   width: 90%;
   margin: auto;
   text-align: center;
@@ -119,6 +113,40 @@ input:checked + .tab_class + .content_class {
   margin-bottom: 20px;
 }
 
+.area img{
+  max-height: 10%;
+  max-width: 6%;
+}
+
+.area .yoko{
+  max-height:  12%;
+  max-width:  8%;
+}
+
+#footer {
+  position:sticky;
+  top:100vh;
+  background-color: #61ab4d;
+  border-top: solid 1px lightgray;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+#footer ul {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#footer ul li {
+  padding: 0 4px;
+  display: inline;
+}
+
+#footer p {
+  text-align: center;
+}
+
+
 @media only screen and (max-width: 750px){
   header{
     height: 250px;
@@ -147,47 +175,33 @@ input:checked + .tab_class + .content_class {
     line-height: 50px;
   }
 
-  .area img{
-    height:  50px;
-    width:  auto;
-  }
-  .area .yoko{
-    height: 35px;
-    width:  auto;
-  }
+  .tab_class {
+    width: calc(100%/6);
+    height: 50px;
+    background-color: darkgrey;
+    border-radius: 2px;
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    order: -1;
     
-}
-
-#footer {
-  background-color: #61ab4d;
-  border-top: solid 1px lightgray;
-  padding-bottom: 10px;
-  margin-top: 30px;
-}
-
-#footer ul {
-  margin-top: 5px;
-  text-align: center;
-}
-
-#footer ul li {
+    position: sticky;
+    top: 0px;
+  }
   
-  padding: 0 4px;
-  display: inline;
-}
-
-#footer p {
-  text-align: center;
-}
-
-
-@media only screen and (max-width: 650px){
-  .area img{
-    height:  37px;
-    width:  auto;
+  .content_class p{
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 10px;
   }
-  .area .yoko{
-    height: 27px;
-    width:  auto;
+ 
+  .content_class h2{
+    font-size: 16px;
+    background-color: #cce5cf;
+    margin-bottom: 10px;
   }
+  
+    
 }
