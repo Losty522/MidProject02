@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.all_artcle{
+  width: 90%;
+  margin: auto;
+}
+
+.all_artcle h1{
+  background-color: #cce5cf;
+  font-size: 30px;
+  padding-left: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.all_artcle h3{
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.all_artcle p{
+  width: 80%;
+  font-size: 18px;
+}
+
+.all_artcle .list{
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.all_artcle img{
+  height:  55px;
+  width:  auto;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.all_artcle .yoko{
+  height:  40px;
+  width:  auto;
+}
+
+
+.list_beginners{
+  font-size: 19px;
+  width: 80%;
+  margin-left: 30px;
+  list-style: disc;
+  
+}
+
+#Riichi ul {
+  font-size: 19px;
+  width: 80%;
+  margin-left: 30px;
+  list-style: disc;
+  
+}
+
+#Furiten ul {
+  font-size: 19px;
+  width: 80%;
+  margin-left: 30px;
+  list-style: disc;
+  
+}
+
+#EndingTheGame ul {
+  font-size: 19px;
+  width: 80%;
+  margin-left: 30px;
+  list-style: disc;
+  
+}
+table{
+  width: 60%;
+  font-size: 19px;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th{
+  border: 1px solid black;
+}
+td{
+  border: 1px solid black;
+}

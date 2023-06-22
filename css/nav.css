@@ -7,8 +7,8 @@
   margin: 0;
   padding: 0;
   background-color: #333;
-  border: 1px solid red;
-  height: 70px;
+  /* border: 1px solid red; */
+  height: 50px;
   width: 100%;
 
 }
@@ -26,15 +26,15 @@
   height: 100%;
   width: 180px;
   background-color: green;
-  border: 1px solid red;
+  /* border: 1px solid white; */
   display: block;
   color: white;
   text-align: center;
   text-decoration: none;
-  line-height: 70px; /*set as same as height*/
+  line-height: 50px; /*set as same as height*/
 }
 .nav li a:hover {
-  background-color: #111;
+  background-color: #61ab4d;
 }
 
 .area {
@@ -44,25 +44,38 @@
   display: flex;
 }
 .area img{
-  height:  60px;
+  height:  55px;
   width:  auto;
 }
+
 .area .yoko{
   height: 45px;
   width:  auto;
 }
 
+.Sentence{
+  
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .tab_class {
-  width: calc(100%/5);
+  width: calc(100%/6);
   height: 50px;
   background-color: darkgrey;
+  border-radius: 2px;
   line-height: 50px;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   display: block;
   float: left;
   order: -1;
+  
+  position: sticky;
+  top: 0px;
 }
  
 input[name="tab_name"] {
@@ -78,17 +91,28 @@ input:checked + .tab_class {
   display: none;
   width: 100%;
 }
- 
+
+
+
 input:checked + .tab_class + .content_class {
   display: block;
 }
 
 .content_class h2{
-  background-color: rgb(114, 114, 169);
+  background-color: #cce5cf;
+  margin-bottom: 10px;
+}
+
+.content_class p{
+  width: 80%;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 .content_class article{
-  border: 1px solid red;
+  background-color: rgb(246, 244, 244);
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 10px 10px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -132,13 +156,34 @@ input:checked + .tab_class + .content_class {
     
 }
 
+#footer {
+  background-color: #61ab4d;
+  border-top: solid 1px lightgray;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+#footer ul {
+  text-align: center;
+}
+
+#footer ul li {
+  padding: 0 4px;
+  display: inline;
+}
+
+#footer p {
+  text-align: center;
+}
+
+
 @media only screen and (max-width: 650px){
   .area img{
-    height:  35px;
+    height:  37px;
     width:  auto;
   }
   .area .yoko{
-    height: 25px;
+    height: 27px;
     width:  auto;
   }
 }
